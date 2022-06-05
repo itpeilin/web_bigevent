@@ -47,7 +47,7 @@ $(function() {
                     return layer.msg(res.message);
                 }
                 layer.msg('注册成功');
-                //模拟人的点击行为
+                //模拟人的点击行为git
                 $('#link_login').click();
                 $('#form_reg [name=username]').val('')
                 $('#form_reg [name=password]').val('')
