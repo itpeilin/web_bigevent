@@ -49,6 +49,9 @@ $(function() {
                 layer.msg('注册成功');
                 //模拟人的点击行为
                 $('#link_login').click();
+                $('#form_reg [name=username]').val('')
+                $('#form_reg [name=password]').val('')
+                $('#form_reg [name=repassword]').val('')
             }
         })
     })
@@ -71,7 +74,9 @@ $(function() {
                 //将登录成功的token字符串 保存到locakStorage
                 localStorage.setItem('token', res.token)
                     //console.log(res.token);
-                    //location.href = './index.html'
+                setTimeout(function() {
+                    location.href = './index.html'
+                }, 500)
             }
         })
     })
