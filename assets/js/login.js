@@ -77,7 +77,10 @@ $(function() {
                 setTimeout(function() {
                     location.href = './index.html'
                 }, 500)
+<<<<<<< HEAD
 
+=======
+>>>>>>> index
             }
         })
     })
