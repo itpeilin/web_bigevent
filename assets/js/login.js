@@ -73,7 +73,7 @@ $(function() {
                 layer.msg('登录成功');
                 //将登录成功的token字符串 保存到locakStorage
                 localStorage.setItem('token', res.token)
-                    //console.log(res.token);
+
                 setTimeout(function() {
                     location.href = './index.html'
                 }, 500)
